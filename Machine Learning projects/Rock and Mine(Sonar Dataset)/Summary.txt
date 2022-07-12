@@ -1,0 +1,23 @@
+1. The dataset is a balanced dataset since the number of binary labels present in the 
+the dataset is almost the same.
+
+2. There are no categorical variables so there won't be any cardinality issues and any rare label problem
+
+3. The data doesn't contain any missing values 
+
+4. There aren't any outliers present in the dataset
+
+5. Since the variable magnitude of data is between 0 to 2 there wasn't any need of doing any feature selection 
+but for better results, the data should be standardized and it should be on the same scale least 
+the minimum values should be 0 and maximum should be between 1.
+
+6. The dataset doesn't contain a large amount of data so here I have proceeded with the 4 machine learning 
+algorithms which are logistic regression, K nearest neighbor, decision tree, and support vector machine
+
+7. I have excluded some algorithms like naive Bayes, and ensemble learning as naive Bayes are mostly 
+used for text data, and for ensemble learning, we need a large amount of data to train the data.
+
+8. The accuracy for the K Nearest Neighbor and Support Vector Machine is almost the same but there are 
+some differences in the precision, recall, and F1 score. But if you see if the precision of the KNN algorithm is
+high then the recall of SVM is high so we can't come to a conclusion like this. Henceforth if we see there is
+a slight increase in the f1 score of SVM as compared to the KNN. 
