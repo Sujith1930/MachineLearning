@@ -1,24 +1,12 @@
-1. In this study, I used six distinct machine learning algorithms, one deep learning method, and a feature selection algorithm to predict whether an individual has diabetes or not. 
-2. The following algorithms are used: LR, KNN, NB, DT, RF, and ANN. 
-3. I used PCA to minimize the number of dimensions. 
-4. I used pandas read CSV to submit the data to my local repository. 
-5. After importing the data, I cleaned it using techniques such as imputation and determining the variable magnitude of the data. 
-6. Before performing missing data imputation, the data should be divided into training and test sets. 
-7. Because the dataset has 768 records, I utilized a 90% and 10% split technique. 90% of the data will be used for training and 10% for testing. As a result, I acquired 691 records in the training set with eight features and 77 records in the test set with eight features. 
-8. After data splitting, data cleansing is performed. Initially, there were no nan values in the dataset, but there were zero values. Initially, I just substituted nan values for zeros. Then scikit learn provides a variety of algorithms for imputation of missing data, the most prominent of which are mean and median imputation. 
-9. If the data are normally distributed, I used the mean; if they are skewed, I used median imputation. The dataset contains data at various scales. As a result, I used feature scaling to obtain all features within the appropriate range. 
-10. Since not all classification algorithms require feature scaling, I chose to apply it after missing value imputation. 
-11. There are numerous ways for scaling features; however, for this study, I chose the min-max scaler. All features, except the dependent variable, had values between 0 and 1.
-12. After scaling the features, I performed the machine learning algorithms on the training and test sets. 
-13. I picked four classification measures to evaluate machine learning algorithms: accuracy, precision, recall, and f1 score. 
-14. The first machine learning method I chose was LR, which has an accuracy of 86%, and the other classification metrics were also accurate. 
-15. Following LR, the next machine learning method used in this case was the KNN, which achieves an accuracy of 84%. 
-16. According to NB, the accuracy is 82%. 
-17. DT has a 90% accuracy rate, which is the greatest of any machine learning algorithm. 
-18. The accuracy of RF is 86%. SVM has an accuracy of 84%. 
-19. ANN predicts with an accuracy of 83%. 
-20. Then, after running all of the machine learning algorithms, I utilized the PCA to minimize the dimensions. After conducting PCA on the machine learning techniques, the KNN model achieved an accuracy of 88%, which was quite high in comparison to other machine learning methods.
-21. I was comparing the accuracies of several machine learning and deep learning algorithms in this study. 
-22. Thus, I would want to infer that the machine learning algorithm was superior to the deep learning algorithm in terms of effectiveness. 
-23. Sometimes, there may be an issue with the features, which is why I reduced the dimensions of all the features and then again performed machine learning and deep learning algorithms. However, after applying dimensionality reduction on all machine learning and deep learning methods, the KNN model had the biggest improvement in accuracy when compared to the ANN model. As a result of the accuracy, DT provides accurate predictions that are simple to execute.
-
+The main aim of this project is to use the accuracy of various machine learning and deep learning algorithms to determine whether or not an individual has diabetes.
+To equate various classification algorithms to deep learning algorithms to determine the best algorithms for predicting the outcome. 
+These projects aim to predict whether or not an individual has diabetes before any tests are carried out
+The accuracies of the algorithm are
+ Logistic Regression:- 86%
+ K Nearest Neighbor:- 84%
+ Naive Bayes:-82%
+ Support Vector Machines:-84%
+ Decision Tree:-90%
+ Random Forest:-86%
+ Artificial Neural Network:-83%
+ As a result of the accuracy, Decision Tree provides accurate predictions that are simple to execute.
