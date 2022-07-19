@@ -1,0 +1,25 @@
+1. The dataset is a US market index dataset, it contains data for the past 20 years. 
+2. The data doesn't contain any outliers and missing values except the weekends as the stock market doesn't work on weekends and bank holidays.
+3. The first task here was to find the optimal number of clusters so using the elbow method and silhouette_score cluster 4 contains the score of 0.5136028265085952 which is the 
+highest among the other cluster. The cluster results are
+		1    1965
+		3    1396
+		0    1067
+		2     804
+4. Cluster 1 specifies the event where the open and close price of shares are low and the volume of purchase is also low it might be due to the stock market crash like the Dot-com bubble.
+   Cluster 2 specifies the event where it resumes from the crash but still, the opening and closing of shares are low but high compared to the stock market crisis and 
+the volume of buying shares is also high as compared to the cluster1
+   Cluster 3 specifies the event where it comes back to normal.
+   Cluster 4 specifies the event where the open and close of shares are high and people started buying shares at a large amount.
+5. After comparing the shares of today and previous day using the formula:-
+	difference of opening price = [Opening price (today) / Opening price (yesterday)] - 1
+	differnce of opening price and closing price = [Opening price (today) - Closing price (today)]/Closing price(today)
+	difference of volume = [Volume (today) / Volume (yesterday)] - 1
+6. Later apply the clustering algorithm to the above-given new data. The results for the new data are:-
+	1    2809
+	3    1314
+	0    1003
+	2     105
+7. Then applying the monthly returns starting from today how much will be the outcome for the month end using the formulas
+	Monthly returns = [Closing price (last day) / Closing price (first day)] - 1
+8. Later I performed a decision tree to classify if investing in any month can be a profitable strategy.
